@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>조건문을 사용한 구구단 연습</h1>
+    <script>
+       var n = Number(prompt(" 몇 단을 출력할까요"));
+        if(n < 2){
+            console.log("n은 " + n + " 입니다. 2이상, 9이하의 값만 입력할 수 있습니다.");
+        }else if(n > 9){
+            console.log("n은 " + n + " 입니다. 2이상, 9이하의 값만 입력할 수 있습니다.");
+        }else{
+            document.write("<h3>" + n + "단</h3>");
+            for(var i = 1; i <= 9; i++){
+            document.write(n + " * " + i + " = " + n * i + "<br>");
+            }
+        }
+
+
+        /* 조건식을 잘못 나눠 n이 2이하, 9 이상이어도 구구단이 출력됨
+        var n = Number(prompt(" 몇 단을 출력할까요"));
+        document.write("<h3>구구단 " + n + "단 </h3>");
+        if(1 < n < 10){
+            for(var i = 1; i <= 9; i++){
+            //console.log(n + " * " + i + " = " + n * i);
+            document.write(n + " * " + i + " = " + n * i + "<br>");
+            }
+        }else{
+            document.write("2이상, 9이하의 값만 입력할 수 있습니다.");
+        }
+        */
+    </script>   
+</body>
+</html>
+
