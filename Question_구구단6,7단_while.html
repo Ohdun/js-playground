@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>반복문을 사용한 구구단 연습</h1>
+    <script>
+        var n = Number(prompt(" 몇 단을 출력할까요"));
+        document.write("<h3>구구단 " + n + "단 </h3>");
+        
+        var i = 1;
+        while(i <=9 ){
+             //실무에서는 i < 10으로 짜는 것을 추천
+            console.log(n + " * " + i + " = " + n * i);
+            document.write(n + " * " + i + " = " + n * i + "<br>");
+            i++;
+        }
+    </script>   
+</body>
+</html>
+
